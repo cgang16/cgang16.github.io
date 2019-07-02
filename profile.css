@@ -1,0 +1,220 @@
+
+#container{
+    width:1150px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  nav{
+    padding-top:10px;
+    margin-left:600px;
+  }
+  nav ul{
+    list-style-type:none;
+    text-align:center;
+  }
+  nav li{
+    display:inline;
+    border:1px solid #000000;
+    border-radius:15px;
+    background-color:#863c1f;
+  }
+  nav a{
+    text-align:center;
+    text-decoration:none;
+    margin-right:20px;
+    margin-left:20px;
+    font-weight:bold;
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+  }
+  nav a:link,nav a:visited{
+    color:white;
+  }
+  nav a:hover{
+    color:black;
+  }
+  nav li:hover{
+    background-color:rgb(240, 101, 9);
+  }
+
+  main{
+    margin-top:20px;
+    margin-left:200px;
+    margin-right:0;
+    padding:15px;
+  }
+  
+  body{
+    background: color grey 11;;
+  }
+
+
+  header{
+    border:1px solid  #000000;
+    border-radius:40px;
+    height:300px;
+    background-color:LightSlateGray;
+    background-image:url("pic/backpic2.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+
+  .maintitle{
+    display:block;
+    padding-top:65px;
+    color:white;
+    font-size:20px;
+    font-style:italic;
+    opacity:0.8;
+    margin-left:900px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  main .contents{
+    padding:20px 10px 20px 10px;
+    font-family:Kaiti;
+  }
+
+  main .contents h1 {
+    display:block;
+    margin-bottom:20px;
+    color:black;
+    text-align:center;
+    font-size:25px;
+  }
+
+  main .contents p{
+    text-indent:2em;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size:20px;
+  }
+
+  main .contents p.edu{
+      text-indent:0em;
+      text-align:center;
+  }
+
+  aside{
+    border:0px solid #000000;
+    border-radius:15px;
+    float:left;
+    width:150px;
+    height:100%;
+    background-color:#ac5606;
+    margin-top:80px;
+    margin-right:10px;
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+  
+  aside ul{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  aside li{
+    border-bottom:2px groove #ffffff;
+    margin:10px 0 10px 0;
+    padding:15px 0 15px 0;
+    list-style:none;
+  }
+  
+  aside a{
+    padding-left:0;
+    padding-right:0;
+    margin-left:0;
+    margin-right:0;
+    text-decoration:none;
+    font-size:20px;
+    font-family:Kaiti;
+    font-weight:bold;
+  }
+  
+  aside a:visited{
+    color:black;
+  }
+  aside a:link{
+    color:black;
+  }
+  aside a:hover{
+    color:white;
+  }
+
+  .line{
+    display:flex;
+    direction:row;
+    align-items:center;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .line .pic{
+    display:block;
+    width:450px;
+    margin-left:50px;
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  
+  .line .text{
+    display:block;
+    width:450px;
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  
+  .line .p{
+    border:0px solid #000000;
+    border-radius:20px;
+  }
+
+  .line .t1{
+      border-right:2px dashed rgb(168, 73, 9);
+      border-top:2px dashed rgb(168,73,9);
+  }
+
+  .line .t2{
+      border-left:2px dashed rgb(168,73,9);
+  }
+
+  .line .t3{
+      border-right:2px dashed rgb(169,73,9);
+      border-bottom:2px dashed rgb(169,73,9);
+  }
+
+  .btm{
+    display:flex;
+    direction:row;
+    justify-content: center;
+    margin-top:40px;
+    margin-bottom:40px;
+    
+  }
+  .btm a{
+    border:0px solid;
+    width:150px;
+    height:40px;
+    border-radius:5px;
+    background-color:rgb(241, 151, 90);
+    text-decoration:none;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+  }
+  .btm a:visited{
+    color:black;
+  }
+  
+  footer{
+    border-top:1px groove rgb(169, 73, 9);
+    height:50px;
+    text-align:center;
+    font-style: Courier;
+    text-decoration:none;
+  }
