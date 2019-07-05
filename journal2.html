@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="个人主页">
+        <meta name="author" content="陈刚">
+        <meta name="copyright" content="陈刚">
+        <meta name ="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>个人小站</title>
+        <link rel="stylesheet" type="text/css" href="journal.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" name="ttop">Home</a></li>
+                            <li><a href="index.html">journal</a></li>
+                            <li><a href="profile.html">archive</a></li>
+                            <li><a href="about:blank">more</a></li>
+                        </ul>
+                    </nav>
+
+                <div class="maintitle">
+                    <h1>Journal</h1>
+                </div>
+
+            </header>
+            <main>
+                <h1>日志二：JavaScript编程作业题总结</h1>
+                <h2>Part 1</h2>
+                <p>
+                    JavaScript数组有方便的排序方法：arr.sort(compare),其中compare为比较函数。
+                </p>
+                <p>
+                    Date对象有众多有用接口，方便处理日期。Date.parse()可以解析日期字符串，并
+                    返回1970/1/1午夜距离字符串日期的毫秒数。
+                </p>
+                <p>
+                    本题可以先排序，再根据parse()函数返回结果计算ddl和字符串日期时间的差值，进而
+                    分析延长时间。
+                </p>
+                <h2>Part 2</h2>
+                <p>
+                    Generator函数与普通函数的区别：
+                    <p>
+                        1.function和函数名之间有*号。
+                        2.函数体内部使用yield表达式。
+                    </p>
+                </p>
+                <p>
+                    调用Generator函数会返回Iterator实例，执行next()后开始真正运行，将
+                    yield后的值包装成固定对象返回({value:val,done:boolean})直至最后。
+                </p>
+                <p>
+                    yield*可以在Generator内部嵌套一个Generator。
+                </p>
+                <p>
+                    本题对某个结点yield value,对其子树递归使用yiled* Generator。
+                </p>
+                <h2>Part 3</h2>
+                <p>
+                    对数组每个元素判断类型后处理，如果是数组类型则递归处理。
+                </p>
+                <h2>Part 4</h2>
+                <p>本题重点在于字符串的处理以及数组作为栈的使用。</p>
+                <p>首先分析运算符定义语句可以返回恰当的处理函数。</p>
+                <p>字符串经过一遍遍历后，可以将所有的数字和符号分开，存储在某个数组之中。</p>
+                <p>接着就是使用栈将数组中元素不断压入栈中并进行特定处理。遵行原则：
+                    <p>
+                    1.')'必须和一个'('匹配。
+                    </p>
+                    <p>
+                    2.栈中不允许存在可以自顶而下的计算，每一次处理需要直至栈上不能计算为止。
+                    </p>
+                </p>
+                
+            </main>
+            <div class="btm">
+                <a  href="#ttop" >Back to top</a>
+            </div>
+            <footer>
+                <small><i>Copyright &copy;gang-che16@mails.tsinghua.edu.cn</i></small>
+            </footer>
+            
+        </div>
+    </body>
+</html>
