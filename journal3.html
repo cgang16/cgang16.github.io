@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="个人主页">
+        <meta name="author" content="陈刚">
+        <meta name="copyright" content="陈刚">
+        <meta name ="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>个人小站</title>
+        <link rel="stylesheet" type="text/css" href="journal.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" name="ttop">Home</a></li>
+                            <li><a href="index.html">journal</a></li>
+                            <li><a href="profile.html">archive</a></li>
+                            <li><a href="about:blank">more</a></li>
+                        </ul>
+                    </nav>
+
+                <div class="maintitle">
+                    <h1>Journal</h1>
+                </div>
+
+            </header>
+            <main>
+                <h1>日志三：NodeJS服务开发实践实验总结</h1>
+                <p>这次实验整体内容比较充实，大约花费了两三天时间完成。主要学习在服务器搭建简单的web后端服务，
+                    同时学习了一些软件如winscp,eslint等等，也熟悉了一些linux命令。
+                    整体上实验完成得很艰难，但也学习了很多新知识。
+                </p>
+                <p>
+                    登陆服务器以及操作尝试了一些软件/方式，最后使用winscp上传/下载文件，在windows命令行中使用账号密码登陆服务器，进行一些命令行操作。
+                </p>
+                <p>
+                    整体后端框架使用koa。静态文件服务搭建，需要用到koa-static模块，使用app.use()将相应的文件路径注册为静态资源目录。
+                    这样在浏览器中就能使用IP+端口访问静态文件了。实验中遇到的问题是端口选择不正确，
+                    服务器没有开放3000端口，导致刚开始无论如何也访问不了文件。同时也学会了使用lsof -i:****查看端口使用情况，
+                    以及使用kill -9 *****杀掉占用进程。
+                </p>
+                <p>
+                    API服务搭建需要使用koa-router路由管理模块，将具体的http请求指向特定的功能模块。
+                    同时也学习到使用koa-body来处理multipart/form-date类型数据。要求的API包括三种类型的http请求：POST/GET/DELETE。
+                    不同请求的实际数据获取是不同的，post请求数据在ctx.request.body中，然而其他的请求，数据在ctx.request.query里。
+                    同时通过查询，了解到HTTP的消息结构。
+                </p>
+                <p>
+                    实验中键值对的处理使用了JavaScript中的Map对象，Map对象有方便的接口进行键值对的存储查询以及删除。
+                </p>
+                <p>
+                    实验虽然辛苦但是也有很多收获。
+                </p>
+  
+                
+            </main>
+            <div class="btm">
+                <a  href="#ttop" >Back to top</a>
+            </div>
+            <footer>
+                <small><i>Copyright &copy;gang-che16@mails.tsinghua.edu.cn</i></small>
+            </footer>
+            
+        </div>
+    </body>
+</html>
