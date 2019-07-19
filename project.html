@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="个人主页">
+        <meta name="author" content="陈刚">
+        <meta name="copyright" content="陈刚">
+        <meta name ="viewport" content="width = device-width, initial-scale = 1.0">
+        <title>个人小站</title>
+        <link rel="stylesheet" type="text/css" href="journal.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" name="ttop">Home</a></li>
+                            <li><a href="index.html">journal</a></li>
+                            <li><a href="profile.html">archive</a></li>
+                            <li><a href="about:blank">more</a></li>
+                        </ul>
+                    </nav>
+
+                <div class="maintitle">
+                    <h1>Journal</h1>
+                </div>
+
+            </header>
+            <main>
+                <h1>微信小游戏开发总结</h1>  
+                <h2>Cocos Creator</h2>
+                <p>
+                    整体上是一款比较容易上手的游戏引擎，提供了很多方便的接口。本次小游戏开发中使用的物理引擎给小游戏的制作带来了很多便利。
+                    比如在Node上添加刚体后，就不需要自己考虑碰撞的物理效果，比如会不会出现重叠/物体的轨迹变化等等。以及重力的使用给物体的
+                    运动带来很大便利。Cocos Creator也有不太好用的地方，比如报错信息方面，就不知道在报告什么错误，需要自己慢慢查找。同时
+                    Cocos Creator文档还是比较简略。比如Joint只有简单的API接口，但没有说明如何使用，在搜索引擎上也找不到相应的信息。这些给游戏
+                    开发过程中带来了一些困难。可以看出来Cocos还有继续完善的空间。
+                </p>
+                <h2>游戏创意</h2>
+                <p>
+                    原先打算做一个3D游戏，后来发现比较困难，选择了2D游戏Sling and Jump。我们的游戏叫做Monkey Jump，基本操作和Sling and Jump没有
+                    太大区别。选择的主要原因是希望兼顾操作简单以及趣味性，所有游戏操作只是手指的按压与松开而已，但是找准时机松手也不是那么容易。
+                </p>
+                <h2>代码实现</h2>
+                <p>
+                    借助Cocos里的物理系统已经可以解决一部分问题。猴子的主要逻辑还是有一点复杂的，但是经过认真分析，可以将不同部分拆分成小函数，一个一个
+                    实现。按压后，寻找柱子，猴子旋转，生成细杆，焊接猴子与细杆，连接细杆与柱子，设置猴子的角速度整体上逻辑比较清晰。实现的过程也比较曲折，
+                    经过了很多次的尝试，不断修复bug，考虑特殊情况等等。最终整体游戏体验上终于能够比较流畅连贯。经过几个同学测试后，反响不错。实现起来有
+                    一定的代码量，也让我进一步熟悉了JS语言。
+                </p>
+                <h2>游戏美工</h2>
+                <p>
+                    一个对我很大的挑战是做背景图片，搭配配色。配色上最后去中国色网站上挑选了比较清淡的颜色，游戏主场景的背景底色是：玉簪绿。背景上的
+                    远山、草地、云朵、花朵、动物在搜索引擎上找到原素材后，用PS软件进行加工：抠图、拉伸、变形等等。最后合成了整个游戏的长背景。后期因为图片
+                    太大了，还对图片进行了切割、压缩等操作。开始界面的图片也是用PS制作，有一点撞色的意味，字体颜色和背景色形成了对比。
+                </p>
+                <p>整体来说，这次大作业还是有一定收获的。</p>
+            </main>
+            <div class="btm">
+                <a  href="#ttop" >Back to top</a>
+            </div>
+            <footer>
+                <small><i>Copyright &copy;gang-che16@mails.tsinghua.edu.cn</i></small>
+            </footer>
+            
+        </div>
+    </body>
+</html>
